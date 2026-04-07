@@ -20,6 +20,7 @@ Given an sgRNA sequence and candidate off-target genomic coordinates, this syste
 
 ## Project Structure
 <img width="1536" height="663" alt="schematic" src="https://github.com/user-attachments/assets/0a05b3b4-58b1-4b2f-81da-b67e8799cc16" />
+
 ```
 crispr_offtarget_agent/
 ├── README.md                    # This file
