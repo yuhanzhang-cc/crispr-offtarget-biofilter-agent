@@ -1,8 +1,8 @@
 # GenieClaw
-## A CRISPR Off-Target Risk Assessment Multi-Agent System
+## A genomics-focused AI assistant built on OpenClaw for modular biological problem solving
 <img width="1024" height="253" alt="image" src="https://github.com/user-attachments/assets/599128da-cb00-4f92-ba3c-360db2c0f926" />
 
-A minimal but extensible bioinformatics system for biologically informed CRISPR off-target risk assessment.
+GenieClaw is a genomics-focused AI research assistant built on top of OpenClaw. It is designed to help researchers tackle genome-related biological problems through modular, interpretable, and extensible analysis workflows. Rather than acting as a generic chatbot, GenieClaw organizes domain-specific skills and demo pipelines to solve concrete tasks, such as CRISPR off-target risk assessment, in a structured and reproducible way. As more demos are added, GenieClaw can evolve from executing individual pipelines to selecting the most suitable workflow for a given biological question.
 
 ## Demo1: OffTarget Oracle
 
