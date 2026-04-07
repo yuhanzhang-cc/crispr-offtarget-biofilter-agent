@@ -4,14 +4,15 @@
 
 A minimal but extensible bioinformatics system for biologically informed CRISPR off-target risk assessment.
 
-## Purpose
+## Demo1: OffTarget Oracle
+### Purpose
 
 Given an sgRNA sequence and candidate off-target genomic coordinates, this system:
 1. Annotates each off-target site with genomic context (exon/intron/promoter/intergenic)
 2. Computes a transparent, biologically informed risk score
 3. Generates an interpretable natural-language report
 
-## Key Design Principles
+### Key Design Principles
 
 - **Deterministic scoring**: All numerical risk calculations are performed by transparent Python code, not by LLM
 - **LLM for interpretation only**: The language model generates human-readable summaries, never scores
@@ -19,7 +20,7 @@ Given an sgRNA sequence and candidate off-target genomic coordinates, this syste
 - **CLI-first**: Designed for command-line usage and pipeline integration
 - **Offline-capable**: No runtime internet access required
 
-## Project Structure
+### Project Structure
 <img width="1536" height="663" alt="schematic" src="https://github.com/user-attachments/assets/0a05b3b4-58b1-4b2f-81da-b67e8799cc16" />
 
 ```
@@ -56,18 +57,18 @@ crispr_offtarget_agent/
     └── test_pipeline.py       # End-to-end tests
 ```
 
-## Dependencies
+### Dependencies
 
-### System Requirements
+#### System Requirements
 - Python 3.10+
 - bedtools (must be installed and in PATH)
 
-### Python Packages
+#### Python Packages
 ```bash
 pip install -r requirements.txt
 ```
 
-### Installing bedtools
+#### Installing bedtools
 
 **Ubuntu/Debian:**
 ```bash
@@ -84,9 +85,9 @@ brew install bedtools
 conda install -c bioconda bedtools
 ```
 
-## Quick Start
+### Quick Start
 
-### Run with Demo Data
+#### Run with Demo Data
 
 ```bash
 python -m src.main \
@@ -96,7 +97,7 @@ python -m src.main \
     --outdir results/demo_run
 ```
 
-### Outputs
+#### Outputs
 
 The pipeline produces:
 - `annotated_sites.csv` - Genomic context annotations
@@ -104,14 +105,14 @@ The pipeline produces:
 - `summary.txt` - Human-readable summary
 - `report.json` - Structured report for downstream tools
 
-## Configuration
+### Configuration
 
 Edit `config/default.yaml` to customize:
 - Scoring weights (region, gene importance, pathway importance)
 - Region priority multipliers
 - LLM prompt templates
 
-## Placeholders for Future Expansion
+### Placeholders for Future Expansion
 
 The codebase includes intentional extension points:
 
@@ -119,7 +120,7 @@ The codebase includes intentional extension points:
 2. **Database Connectors**: `db/gene_sets.py` and `db/pathway_lookup.py` use local dictionaries but can be extended to query external databases (Ensembl, KEGG, etc.)
 3. **Scoring Algorithms**: `biological_risk_scorer.py` is designed to support alternative scoring methods
 
-## Testing
+### Testing
 
 ```bash
 # Run all tests
