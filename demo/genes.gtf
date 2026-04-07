@@ -1,0 +1,19 @@
+# Synthetic GTF annotation for demo
+# Format: seqname source feature start end score strand frame attributes
+chr1	test	gene	10000	11000	.	+	.	gene_id "GENE_A"; gene_name "TP53";
+chr1	test	exon	10050	10100	.	+	.	gene_id "GENE_A"; gene_name "TP53";
+chr1	test	exon	10200	10300	.	+	.	gene_id "GENE_A"; gene_name "TP53";
+chr1	test	gene	20000	21000	.	+	.	gene_id "GENE_B"; gene_name "BRCA1";
+chr1	test	exon	20400	20600	.	+	.	gene_id "GENE_B"; gene_name "BRCA1";
+chr1	test	gene	30000	32000	.	-	.	gene_id "GENE_C"; gene_name "MYC";
+chr1	test	exon	30400	30600	.	-	.	gene_id "GENE_C"; gene_name "MYC";
+chr2	test	gene	14000	16000	.	+	.	gene_id "GENE_D"; gene_name "KRAS";
+chr2	test	exon	14900	15100	.	+	.	gene_id "GENE_D"; gene_name "KRAS";
+chr2	test	gene	24000	26000	.	-	.	gene_id "GENE_E"; gene_name "EGFR";
+chr2	test	exon	24900	25100	.	-	.	gene_id "GENE_E"; gene_name "EGFR";
+chr3	test	gene	4000	6000	.	+	.	gene_id "GENE_F"; gene_name "PTEN";
+chr3	test	exon	4900	5100	.	+	.	gene_id "GENE_F"; gene_name "PTEN";
+chr3	test	gene	11000	13000	.	+	.	gene_id "GENE_G"; gene_name "AKT1";
+chr3	test	exon	11900	12100	.	+	.	gene_id "GENE_G"; gene_name "AKT1";
+chr3	test	gene	17000	19000	.	-	.	gene_id "GENE_H"; gene_name "MTOR";
+chr3	test	exon	17900	18100	.	-	.	gene_id "GENE_H"; gene_name "MTOR";

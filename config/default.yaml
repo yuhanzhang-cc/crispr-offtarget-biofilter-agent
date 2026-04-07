@@ -1,0 +1,32 @@
+# CRISPR Off-Target Risk Scoring Configuration
+
+# Scoring weights (should sum to 1.0 for interpretability, but not required)
+weights:
+  region: 0.4        # Genomic region type weight
+  gene: 0.35         # Gene importance weight
+  pathway: 0.25      # Pathway importance weight
+
+# Region priority multipliers (higher = higher risk)
+region_priority:
+  exon: 1.0
+  promoter: 0.8
+  intron: 0.4
+  intergenic: 0.1
+  unknown: 0.5
+
+# Score thresholds for risk categorization
+thresholds:
+  high_risk: 0.7
+  medium_risk: 0.4
+  low_risk: 0.0
+
+# LLM Configuration
+llm:
+  max_sites_to_interpret: 10
+  temperature: 0.3
+  max_tokens: 1000
+
+# Pipeline settings
+pipeline:
+  default_output_format: csv
+  save_intermediate: true

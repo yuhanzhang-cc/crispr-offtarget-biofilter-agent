@@ -1,0 +1,10 @@
+# Demo off-target sites for testing
+# Format: chrom start end name mismatch_count strand
+chr1	10050	10072	offtarget_1	3	+
+chr1	20500	20522	offtarget_2	2	+
+chr1	30500	30522	offtarget_3	1	-
+chr2	15000	15022	offtarget_4	2	+
+chr2	25000	25022	offtarget_5	4	-
+chr3	5000	5022	offtarget_6	1	+
+chr3	12000	12022	offtarget_7	3	+
+chr3	18000	18022	offtarget_8	2	-
