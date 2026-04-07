@@ -1,6 +1,7 @@
 # CRISPR Off-Target Risk Assessment Agent
 
 A minimal but extensible bioinformatics system for biologically informed CRISPR off-target risk assessment.
+<img width="1536" height="1024" alt="schematic" src="https://github.com/user-attachments/assets/95936120-b809-478b-b679-592f2ed1fe87" />
 
 ## Purpose
 
